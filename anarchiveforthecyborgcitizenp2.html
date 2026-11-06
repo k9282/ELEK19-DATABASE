@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An Archive For The Cyborg Citizen - Page 2</title>
+<style>
+  /* Sized in "cqw" (1% of page width). Your frame is 1250px wide,
+     so 1px in Figma = 0.08cqw here. */
+  html, body { margin: 0; background: #3b7f9f; }
+  .wrap { container-type: inline-size; }
+  .stage {
+    position: relative; width: 100%;
+    aspect-ratio: 1250 / 2092;
+    background: #3b7f9f; overflow-x: hidden;
+  }
+  .mono { font-family: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace, monospace; }
+
+  .panel {
+    position: absolute; left: 59.2cqw; right: 0; top: 0; bottom: 0;
+    background: #78a68a; border-bottom-left-radius: 12cqw 24cqw;
+  }
+
+  /* header */
+  .bar-head {
+    position: absolute; left: 64.8cqw; right: 0; top: 1.36cqw; height: 2.24cqw;
+    background: #d8d8d8; border: 0.08cqw solid #9a9a9a;
+    font-size: 1.16cqw; letter-spacing: 0.05em; color: #111;
+    padding-left: 3.3cqw; display: flex; align-items: center;
+  }
+  .gold { position: absolute; left: 61.76cqw; top: 0.48cqw; width: 3.84cqw; height: 3.84cqw; border-radius: 50%; object-fit: cover; }
+  .pages {
+    position: absolute; left: 77.52cqw; top: 4.72cqw;
+    background: #000; color: #39ff14; font-size: 0.9cqw; padding: 0 0.2cqw; white-space: nowrap;
+  }
+  .pages a { color: #39ff14; }
+  .pages .here { color: #e0242c; }
+  .lovelink { position: absolute; left: 2.08cqw; top: 2.08cqw; width: 4.72cqw; height: 1.68cqw; object-fit: cover; }
+  .back { position: absolute; left: 7.52cqw; top: 2.1cqw; font-size: 0.96cqw; color: #0a1a2a; }
+
+  /* circles and shapes */
+  .microbe { position: absolute; left: 61.2cqw; width: 38cqw; height: 38cqw; border-radius: 50%; object-fit: cover; }
+  .m1 { top: 11.6cqw; }
+  .m2 { top: 119.6cqw; }
+  .ghost {
+    position: absolute; left: 7.36cqw; top: 61.2cqw; width: 38.1cqw; height: 38.1cqw;
+    border-radius: 50%; object-fit: cover; opacity: 0.2;
+    border: 0.1cqw solid rgba(255,255,255,0.7); box-sizing: border-box; pointer-events: none;
+  }
+  svg.shapes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+  /* message */
+  .soon {
+    position: absolute; left: 0; width: 61.92cqw; top: 26.6cqw; margin: 0;
+    text-align: center; color: #fff; font-weight: 600;
+    font-family: "Noto Sans", "Segoe UI", system-ui, sans-serif; font-size: 1.1cqw;
+  }
+
+  a:hover { filter: brightness(1.4); }
+  a:focus-visible { outline: 0.2cqw solid #fff; outline-offset: 0.2cqw; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<main class="stage">
+
+  <div class="panel"></div>
+
+  <!-- header -->
+  <div class="bar-head mono">An Archive For The Cyborg Citizen</div>
+  <img class="gold" src="Ellipse%206.png" alt="">
+  <p class="pages mono" style="margin:0">&lt;<a href="anarchiveforthecyborgcitizen.html">1</a>, <span class="here">2</span>, soon &gt;</p>
+  <img class="lovelink" src="lovelink.gif" alt="">
+  <a class="back mono" href="anarchiveforthecyborgcitizen.html">&lt;back?&gt;&lt;/back?&gt;</a>
+
+  <img class="microbe m1" src="MSC%201.png" alt="Microscope image of cells">
+  <img class="microbe m2" src="MSC%201.png" alt="">
+
+  <svg class="shapes" viewBox="0 0 1250 2092" preserveAspectRatio="none" aria-hidden="true">
+    <g stroke="#c4505a" stroke-width="1.2" stroke-linejoin="round">
+      <polygon fill="rgba(48,145,128,0.88)" points="905,696 1012,719 1103,769 1108,808 1165,870 1112,1045 1015,1225 853,1310 700,1446 835,1330 1030,1150 1108,1000 1105,810 1040,745 935,705"/>
+      <polygon fill="rgba(215,150,145,0.85)" points="548,950 700,1008 836,1047 878,1045 1066,1128 1250,1357 1235,1340 1010,1165 835,1052 606,1078 552,1275 565,1173 590,1135"/>
+      <polygon fill="rgba(185,185,235,0.88)" points="990,612 822,733 833,885 793,960 853,1308 853,1508 888,1342 852,1160 843,1048 833,886"/>
+      <polygon fill="rgba(185,185,235,0.88)" points="897,1283 968,1400 1092,1399 1215,1369 1072,1384 1060,1355 945,1312"/>
+      <line x1="1236" y1="723" x2="1060" y2="1120"/>
+    </g>
+  </svg>
+
+  <img class="ghost" src="MSC%201.png" alt="">
+
+  <p class="soon">No content yet, soon to be added.</p>
+
+</main>
+</div>
+</body>
+</html>
