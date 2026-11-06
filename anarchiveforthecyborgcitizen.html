@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An Archive For The Cyborg Citizen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Saira+Extra+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  /* Sized in "cqw" (1% of page width). Your frame is 1250px wide,
+     so 1px in Figma = 0.08cqw here. */
+  html, body { margin: 0; background: #3b7f9f; }
+  .wrap { container-type: inline-size; }
+  .stage {
+    position: relative; width: 100%;
+    aspect-ratio: 1250 / 2092;
+    background: #3b7f9f; overflow-x: hidden;
+  }
+  .mono { font-family: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace, monospace; }
+
+  /* green right panel with rounded bottom-left corner */
+  .panel {
+    position: absolute; left: 59.2cqw; right: 0; top: 0; bottom: 0;
+    background: #78a68a; border-bottom-left-radius: 12cqw 24cqw;
+  }
+
+  /* header: gold circle + grey bar */
+  .bar-head {
+    position: absolute; left: 64.8cqw; right: 0; top: 1.36cqw; height: 2.24cqw;
+    background: #d8d8d8; border: 0.08cqw solid #9a9a9a;
+    font-size: 1.16cqw; letter-spacing: 0.05em; color: #111;
+    padding-left: 3.3cqw; display: flex; align-items: center;
+  }
+  .gold { position: absolute; left: 61.76cqw; top: 0.48cqw; width: 3.84cqw; height: 3.84cqw; border-radius: 50%; object-fit: cover; }
+  .next {
+    position: absolute; left: 77.52cqw; top: 4.72cqw;
+    background: #000; color: #39ff14; font-size: 0.9cqw; padding: 0 0.2cqw;
+  }
+  .back { position: absolute; left: 7.52cqw; top: 2.1cqw; font-size: 0.96cqw; color: #0a1a2a; }
+
+  /* microbe circles */
+  .microbe { position: absolute; left: 61.2cqw; width: 38cqw; height: 38cqw; border-radius: 50%; object-fit: cover; }
+  .m1 { top: 11.6cqw; }
+  .m2 { top: 119.6cqw; }
+  .ghost {
+    position: absolute; left: 7.36cqw; top: 61.2cqw; width: 38.1cqw; height: 38.1cqw;
+    border-radius: 50%; object-fit: cover; opacity: 0.2;
+    border: 0.1cqw solid rgba(255,255,255,0.7); box-sizing: border-box; pointer-events: none;
+  }
+  svg.shapes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+  /* quote */
+  .quote {
+    position: absolute; left: 1.9cqw; top: 4.9cqw; width: 42cqw; margin: 0;
+    font-family: "Jura", sans-serif; font-weight: 300;
+    font-size: 1.2cqw; line-height: 1.36cqw; color: #8fb4c8;
+  }
+
+  /* list */
+  .content { position: absolute; left: 1.76cqw; top: 10cqw; width: 57cqw; }
+  .code {
+    height: 1.7cqw; margin-top: 2.2cqw;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 31px, #3b7f9f 31px 34px, transparent 34px 71px, #3b7f9f 71px 72px),
+      repeating-linear-gradient(90deg, #44ff10 0 0.2cqw, transparent 0.2cqw 0.4cqw);
+  }
+  .code:first-child { margin-top: 0; }
+  .when {
+    margin: 0.3cqw 0 2.2cqw 0.3cqw; color: #39ff14;
+    font-size: 0.9cqw; letter-spacing: 0.4em; line-height: 1.2cqw;
+  }
+  .list p {
+    margin: 0 0 1.36cqw; font-family: "Saira Extra Condensed", sans-serif; font-weight: 300;
+    font-size: 1.2cqw; line-height: 1.36cqw; color: #14213d;
+  }
+  .list p.rtl { direction: rtl; text-align: left; }
+  .list a { color: #b01c24; text-decoration: underline; }
+  a:hover { filter: brightness(1.4); }
+  a:focus-visible { outline: 0.2cqw solid #fff; outline-offset: 0.2cqw; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<main class="stage">
+
+  <div class="panel"></div>
+
+  <!-- header -->
+  <div class="bar-head mono">An Archive For The Cyborg Citizen</div>
+  <img class="gold" src="Ellipse%206.png" alt="">
+  <a class="next mono" href="anarchiveforthecyborgcitizenp2.html">&lt;1, next&gt;</a>
+  <a class="back mono" href="index.html">&lt;back?&gt;&lt;/back?&gt;</a>
+
+  <img class="microbe m1" src="MSC%201.png" alt="Microscope image of cells">
+  <img class="microbe m2" src="MSC%201.png" alt="">
+
+  <!-- decorative shapes -->
+  <svg class="shapes" viewBox="0 0 1250 2092" preserveAspectRatio="none" aria-hidden="true">
+    <g stroke="#c4505a" stroke-width="1.2" stroke-linejoin="round">
+      <polygon fill="rgba(48,145,128,0.88)" points="905,696 1012,719 1102,769 1106,808 1165,870 1112,1045 1015,1225 853,1310 700,1446 850,1300 1010,1160 1085,1050 1100,900 1000,760"/>
+      <polygon fill="rgba(215,150,145,0.85)" points="700,1008 836,1047 880,1045 1068,1128 1250,1357 1235,1340 1010,1165 835,1052 650,1072"/>
+      <polygon fill="rgba(215,150,145,0.85)" points="606,1078 700,1008 650,1072 590,1135 553,1275"/>
+      <polygon fill="rgba(185,185,235,0.88)" points="990,612 822,733 793,960 853,1307 853,1508 888,1342 850,1000 830,880"/>
+      <polygon fill="rgba(185,185,235,0.88)" points="897,1283 968,1400 1092,1399 1215,1369 1072,1384 1060,1355 945,1312"/>
+      <line x1="1236" y1="723" x2="1060" y2="1120"/>
+    </g>
+  </svg>
+
+  <img class="ghost" src="MSC%201.png" alt="">
+
+  <p class="quote">“Someday in the distant cyborg future, when our internal and external memories fully merge, we may come to possess infinite knowledge. But that’s not the same thing as wisdom.” - Fraer.</p>
+
+  <div class="content">
+
+    <div class="code" style="width:38.9cqw"></div>
+    <p class="when mono">Contents that where Added on Oct, 4 2026:</p>
+    <div class="list">
+      <p>1- <a href="#">Cyborg Citizen: Politics in the Posthuman Age.</a></p>
+      <p>2- <a href="#">The unknown citizen.</a></p>
+      <p>3- <a href="#">Xeno-learning: knowledge transfer across species in deep learning-based spectral image analysis.</a></p>
+      <p>4- <a href="#">A Cyborg Manifesto.</a></p>
+      <p>5- <a href="#">I, cyborg.</a></p>
+      <p>6- <a href="#">Cyberfeminism: A Relationship between Cyberspace, Technology, and the Internet.</a></p>
+      <p>7- <a href="#">Are.na, JSTOR - The Politics of “Cyberfeminism” in the Middle East: The Case of Kurdish Women, Shahrzad Mojab.</a></p>
+      <p class="rtl">8- <a href="#">نسوية إلكترونية.</a></p>
+      <p class="rtl">9- <a href="#">سایبەرناتیکا و سایبەرمێنینیزم: گۆڤاری تەوار ژ ۸۸.</a></p>
+      <p class="rtl">10- <a href="#">سایبەرفێمینیزم: گۆڤاری تەوار ژ ۸۷.</a></p>
+      <p>11- Video: <a href="#">The Body in the Virtual World - The Feminine Cyberspace.</a></p>
+      <p class="rtl">12- <a href="#">بيان سايبورغ.</a></p>
+      <p class="rtl">13- <a href="#">مانیفێستی سایبۆرگ</a></p>
+      <p>14- <a href="#">How Cyberfeminism Is Helping Women Forge Solidarities In Conservative Societies - Shreya Basak, Outlook India.</a></p>
+      <p>15- <a href="#">Post-Tishreen Online Feminism: Continuity, Rupture, Departure.</a></p>
+      <p>16- <a href="#">Sana Murrani: Rupturing Architecture: Spatial Practices of Refuge in Response to War and Violence in Iraq, 2003–2023</a></p>
+      <p>17- <a href="#">(The content of this book is not political, rather it’s about the strategies of the martial arts): 五輪書 宮本武藏純文字版 Miyamoto Musashi, Massima Morigi, Il Libro Dei Cinque Anelli, The Book Of Five Rings, Repubblicanesimo Geopolitico, Neomarxismo, Epifonia Strategica: 五輪書, Go rin no sho.</a></p>
+      <p>18- <a href="#">Cyberfeminism in the Gulf: a Modern Expression of a Longstanding Struggle.</a></p>
+      <p>19- Video: <a href="#">2020: Internet of things | Talk: Close Reading of Cyborg Manifesto قراءة في بيان السايبورغ، مؤسسة خالد شومان، دارة الفنون.</a></p>
+      <p>20- <a href="#">The Emergence of Feminist Digital Activism in the Middle East: An Exploratory Case Study from Kuwait - Eiman Husain.</a></p>
+      <p>21- <a href="#">University of Tehran: Cyberspace and Redefinition of gender roles: Construction of Femininity Conflicts on Kurdish Facebook</a></p>
+      <p>22- <a href="#">The University of Faisalabad: Techno-Performativity And Posthuman Gender Fluidity In Marge Piercy’s He, She And It - Kurdish Studies.</a></p>
+      <p style="margin-top:1.4cqw">23- <a href="#">Jin, Jiyan, Azadi (Women, Life, Freedom): A Transnational Social Movement - Khaled Sheykholeslami</a></p>
+      <p>24- <a href="#">CyberOrient - The Rise of Fourth-Wave Feminism in the Arab region? Cyberfeminism and Women’s Activism at the Crossroads of the Arab Spring.</a></p>
+      <p>25- <a href="#">More women forging careers in Assyrian media despite challenges.</a></p>
+      <p>26- <a href="#">Information is alive: art and theory on archiving and retrieving data.</a></p>
+      <p>27- <a href="#">Introduction to Feminist Thought and Action: #wtf and How Did We Get Here? #whosthatfeminist #whatsthatfeminism</a></p>
+      <p>28- <a href="#">Feminist AI: Critical Perspectives on Algorithms, Data, and Intelligent Machines.</a></p>
+      <p class="rtl">29- <a href="#">هێزی نەرم: شوناس لە جەنگەوە بۆ شڵۆقی.</a></p>
+      <p class="rtl">30- <a href="#">قۆناغی پۆست مرۆڤانە چەمك و ئامانجەکانی</a></p>
+      <p class="rtl">31- <a href="#">گوێگرتن لە ڕەنگەکان ♫</a></p>
+      <p class="rtl">32- <a href="#">فەلسەفەی دوای مرۆڤ</a><br><a href="#">(گۆڕانکاریبەکانی خود لە سەردەمی بووژانەوەبە بەهێزکراوەکان)</a></p>
+    </div>
+
+    <div class="code" style="width:37.9cqw"></div>
+    <p class="when mono">Contents that were added on Oct, 5 2026:</p>
+    <div class="list">
+      <p class="rtl">33- <a href="#">الجسدُ كساحة معركة: السايبورغ ورؤية نسوية في البيولوجيا.</a></p>
+      <p class="rtl">34- <a href="#">السايبورغ (Cyborg): الكائن الهجين بين الإنسان والآلة.</a></p>
+    </div>
+
+    <div class="code" style="width:38.9cqw"></div>
+    <p class="when mono">Contents that were added on Oct, 12 2026:</p>
+    <div class="list">
+      <p class="rtl">35- <a href="#">مردنی یەکەم مرۆڤی “سایبۆرگ” ڕاگەیندرا.</a></p>
+      <p>36- <a href="#">“全球字体新闻联播” (Global Typography News Broadcast).</a></p>
+      <p>37- <a href="#">Development of Sumerian art.</a></p>
+      <p>38- <a href="#">Muslim Women in Science, Past and Present.</a></p>
+      <p>39- <a href="#">Black madonnas : feminism, religion, and politics in Italy, 1924.</a></p>
+      <p>40- <a href="#">Arab Feminist Cyber Activism:<br>Ebtihal Mahadeen.</a></p>
+      <p>41- <a href="#">Cyborgs in Latin America.</a></p>
+      <p class="rtl">41- <a href="#">إنتاج برمجيات الواقع الافتراضي علميا.</a></p>
+      <p>42- <a href="#">qutorun</a><br><a href="#">by د. سعود بن عبد العزيز العقيل</a></p>
+      <p class="rtl">43- <a href="#">شێرێکیان کوشتووە!</a></p>
+      <p>44- <a href="#">Writing the feminine : women in Arab sources.</a></p>
+      <p>45- <a href="#">World History by Era: The Tech Revolution - 1963.</a></p>
+      <p>46- <a href="#">Przetrwalnik: Waldemar Jocher.</a></p>
+      <p>47- <a href="#">Искусственный интеллект. Элективный курс.</a></p>
+    </div>
+
+  </div>
+</main>
+</div>
+</body>
+</html>
