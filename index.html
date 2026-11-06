@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELEK19 Database</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  /* Everything is sized in "cqw" (1% of the stage width), so the whole
+     design scales like your Figma frame. Your frame is 1290px wide,
+     so 1px in Figma = 0.0775cqw here. */
+
+  html, body { margin: 0; }
+  body {
+    /* blue left side, mauve right side (split at 750px of 1290px) */
+    background: linear-gradient(to right, #1a14b8 58.14%, #79536f 58.14%);
+    min-height: 100vh;
+  }
+
+  .stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1290 / 1158;
+    overflow: hidden;
+    container-type: inline-size;
+  }
+
+  /* ---------- scrolling-style text rows at the top ---------- */
+  .rows {
+    position: absolute; left: 0; top: 0.6cqw;
+    width: 58.14cqw; overflow: hidden;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+    font-size: 1.32cqw; line-height: 2.64cqw;
+    color: #fff; white-space: nowrap;
+  }
+  .rows div { overflow: hidden; }
+
+  /* ---------- hurricane GIF ---------- */
+  .gif {
+    position: absolute;
+    left: 23.95cqw; top: 21.63cqw;
+    width: 74.42cqw; height: 66.98cqw;
+    background: #00c8f0;
+  }
+  .gif img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  /* lighter cyan tint over the right part of the GIF */
+  .gif::after {
+    content: ""; position: absolute; top: 0; bottom: 0;
+    left: 45.9%; right: 0;
+    background: rgba(0, 255, 210, 0.28);
+    pointer-events: none;
+  }
+
+  /* big faint vertical "ELEK19" */
+  .ghost {
+    position: absolute; left: 67.8cqw; top: 23.5cqw;
+    writing-mode: vertical-rl;
+    font-family: "Oxanium", sans-serif; font-weight: 700;
+    font-size: 8cqw; letter-spacing: 0.4cqw;
+    color: rgba(10, 70, 190, 0.22);
+    margin: 0;
+  }
+
+  /* ---------- binary columns ---------- */
+  .bin {
+    position: absolute;
+    writing-mode: vertical-rl; transform: rotate(180deg);
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+    font-size: 1.2cqw; white-space: nowrap;
+  }
+  .bin.k { color: #000; }
+  .bin.g { color: rgba(31, 224, 106, 0.9); }
+
+  /* ---------- title ---------- */
+  h1 {
+    position: absolute; left: 24.8cqw; top: 22cqw; margin: 0;
+    font-family: "Oxanium", "Orbitron", sans-serif; font-weight: 700;
+    font-size: 4.2cqw; line-height: 4.96cqw;
+    color: #000;
+  }
+  .tiny {
+    position: absolute; left: 38.4cqw; top: 33.6cqw; margin: 0;
+    font-family: "Noto Sans Mono", monospace; font-size: 0.8cqw;
+    color: rgba(0, 220, 200, 0.5);
+  }
+
+  /* ---------- menu items (medallion + label) ---------- */
+  .item {
+    position: absolute; left: 16.36cqw;
+    display: flex; align-items: center;
+    text-decoration: none; color: #000;
+  }
+  .item img, .item .medal {
+    width: 8.14cqw; height: 8.14cqw; border-radius: 50%;
+    object-fit: cover; display: block; flex: none;
+    border: 0.2cqw solid #8a1a2a; box-sizing: border-box;
+    background: #b9a96a;
+  }
+  .item span {
+    margin-left: -0.3cqw;
+    padding: 0.35cqw 0.3cqw;
+    background: rgba(228, 228, 228, 0.92);
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+    font-size: 1.3cqw; text-decoration: underline;
+  }
+  .item:hover span, .item:focus-visible span { background: #000; color: #fff; }
+  .item:focus-visible { outline: 0.25cqw solid #fff; outline-offset: 0.3cqw; }
+
+  .i1 { top: 46.36cqw; }
+  .i2 { top: 58.37cqw; }
+  .i3 { top: 70.39cqw; }
+</style>
+</head>
+<body>
+<main class="stage">
+
+  <div class="rows" id="rows" aria-hidden="true"></div>
+
+  <!-- the hurricane GIF: put your file at assets/hurricane.gif -->
+  <div class="gif">
+    <img src="assets/hurricane.gif" alt="Animated satellite view of a hurricane over the Caribbean">
+  </div>
+
+  <p class="ghost" aria-hidden="true">ELEK19</p>
+  <div id="bins" aria-hidden="true"></div>
+
+  <h1>ELEK19<br>DATABASE</h1>
+  <p class="tiny">ABOUT / IMPORTANT / CONTACT</p>
+
+  <!-- the three links: put your medallion image at assets/medallion.png -->
+  <a class="item i1" href="anarchiveforthecyborgcitizen.html">
+    <img src="assets/medallion.png" alt=""><span>An Archive For The Cyborg Citizen</span>
+  </a>
+  <a class="item i2" href="databaseone.html">
+    <img src="assets/medallion.png" alt=""><span>Pre- and Post-Apocalyptic Optimization Database</span>
+  </a>
+  <a class="item i3" href="everything.html">
+    <img src="assets/medallion.png" alt=""><span>About/Contact</span>
+  </a>
+
+</main>
+
+<script>
+  // Repeating multilingual "ELEK19" text rows
+  var rows = [
+    "é-kišib-ba ELEK19 - ",
+    "ELEK19 リポジトリ-",
+    "ELEK19 مستودع-",
+    "ELEK19 کۆگای زانیاری-",
+    "Depoya ELEK19-",
+    "Репозиторий ELEK19-",
+    "ELEK19 存储库-",
+    "ELEK19 מאגר-"
+  ];
+  var rowsEl = document.getElementById("rows");
+  rows.forEach(function (unit) {
+    var d = document.createElement("div");
+    d.textContent = unit.repeat(14);
+    rowsEl.appendChild(d);
+  });
+
+  // Decorative binary columns: [left px, top px, bytes, colour] in the 1290px design
+  var cols = [
+    [708,10,4,"k"],[738,10,4,"k"],[708,520,7,"k"],[738,520,7,"k"],
+    [818,60,4,"g"],[848,60,4,"g"],[818,400,7,"g"],[848,400,7,"g"],
+    [935,30,6,"k"],[965,30,6,"k"],[935,520,7,"k"],[965,520,7,"k"],
+    [1090,70,5,"k"],[1120,70,5,"k"],[1090,520,7,"k"],[1120,520,7,"k"],
+    [1185,60,4,"g"],[1215,60,4,"g"],[1185,520,7,"g"],[1215,520,7,"g"]
+  ];
+  var seed = 19; // fixed seed so the digits are the same on every load
+  function rnd() { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
+  function byte() { var s = ""; for (var i = 0; i < 8; i++) s += rnd() > 0.5 ? "1" : "0"; return s; }
+
+  var binsEl = document.getElementById("bins");
+  var px = 100 / 1290; // px (Figma) -> cqw
+  cols.forEach(function (c) {
+    var d = document.createElement("div");
+    d.className = "bin " + c[3];
+    d.style.left = (c[0] * px) + "cqw";
+    d.style.top = (c[1] * px) + "cqw";
+    var parts = [];
+    for (var i = 0; i < c[2]; i++) parts.push(byte());
+    d.textContent = parts.join(" ");
+    binsEl.appendChild(d);
+  });
+</script>
+</body>
+</html>
