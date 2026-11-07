@@ -14,8 +14,8 @@ ELEK19 is a small, hand-curated website that collects and links to media about t
 
 *It is divided into two main parts:*
 
-1. **An Archive for The Cyborg Citizen**: a reading list on cyborg theory, cyberfeminism, and the posthuman.
-2. **Pre- and Post-Apocalyptic Optimization Database**: texts and media on ethics, apocalypse, and emerging technology.
+1. **An Archive for The Cyborg Citizen**: a reading list on criticial philosophy, cyborg theory, cyberfeminism, and the posthuman, global digital activism, speciecism, transformation in structures, etc.
+2. **Pre- and Post-Apocalyptic Optimization Database**: texts and media on ethics, survival, war & "apocalypse", suffering and emerging technology, etc.
 
 Content is updated on a monthly basis.
 
