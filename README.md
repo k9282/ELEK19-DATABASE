@@ -2,7 +2,7 @@
 
 **An on-going database project to preserve files and content related to critical human and post-human expressions.**
 
-Made on Oct 13, 2026 · Published on Nov 6, 2026 · Version 1.0
+Made on Oct 4, 2026 · Published on Nov 6, 2026 · Version 1.0
 
 Idea, data collections, designs, and curation by **Aeldari Nasim**.
 
