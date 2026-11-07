@@ -10,7 +10,7 @@ Idea, data collections, designs, and curation by **Aeldari Nasim**.
 
 ## What is this?
 
-ELEK19 is a small, hand-curated website that collects and links to media about technology, post-humanism, ethics, war and survival, cyberfeminism, science, and society, etc. 
+ELEK19 is a hand-curated website that collects and links to media about technology, post-humanism, ethics, war and survival, cyberfeminism, science, and society, etc. 
 
 *It is divided into two main parts:*
 
@@ -20,6 +20,7 @@ ELEK19 is a small, hand-curated website that collects and links to media about t
 Content is updated on a monthly basis.
 
 **Preserved content includes:** websites, books, philosophy, software, music, audio, videos, video games, articles, fiction, artworks, and documentaries/films, etc.
+**Geograhical focus**: This database tries to be as global as it can be, and provides data in varius languages but tends to focus on the West Asian regions more particularly.
 
 ## Pages
 
